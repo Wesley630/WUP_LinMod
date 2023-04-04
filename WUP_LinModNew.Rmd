@@ -59,6 +59,16 @@ cor(SIMS~ARM,data=data)
 
 ### Inferential  (Build model.1)
 
+```{r}
+model.1 <- lm(SIMS~ARM,data=data)
+summary.lm(model.1)
+```
+
+The equation for the line of this scenario is Sims = 0.054563xARM - 4.095160. since we have a positive coefficient, the line increases making it move from the lower left corner to the upper right corner.
+
+
+
+
 #### Predict at target point
 
 
