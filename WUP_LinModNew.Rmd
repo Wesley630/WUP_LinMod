@@ -93,7 +93,26 @@ The data above shows us the line of best fit from the data points collected from
 ### Now add in scatterplot
 
 
+```{r}
+basicGRIP <- ggplot(data, aes (y=SIMS, x=GRIP))
+```
+```{r}
+basicGRIP+ geom_point() + ggtitle("SIMS VS ARM") + theme(plot.title = element_text(hjust = 0.5, size = 20))
+```
+
+
+
+
+
+
 ### Numerical results 
+
+```{r}
+cor(SIMS~GRIP,data=data)
+```
+
+For Sims vs Grip we have a value of 0.6398458 but for the Sims vs Arm we got 0.6860073. The value of Sims vs Arms is a higher value than that of Sims vs Grip making the correspondence slightly smaller in the correlation of data tables.This shows us that the Sims vs Arms model is more accurate than the Slims vs GRIP model.
+
 
 
 ### Inferential  (Build model.2)
