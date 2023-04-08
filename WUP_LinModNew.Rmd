@@ -161,8 +161,13 @@ The value above tells us that we have a 0.7326545 correlation between Sims vs Ar
 
 
 ```{r}
+<<<<<<< HEAD
 model.3 <- lm(SIMS~ARM+GRIP, data=data)
 summary.lm(model.3)
+=======
+model.2 <- lm(SIMS~ARM+GRIP, data=data)
+summary.lm(model.2)
+>>>>>>> 533c5c687e40dc17099916f4f475649ded66a042
 ```
 
 This data gives us an equation of SIMS= 0.037311xARM + 0.024470xGRIP -5.433871 for what would be the plane of best fit.
